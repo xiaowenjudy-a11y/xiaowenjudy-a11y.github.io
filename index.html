@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f3">
+  <meta name="description" content="朱晓雯，未来启点社区负责人。材料工程背景，具有世界500强企业CVC与硅谷加速器投资经历，专注人工智能、机器人及前沿科技转化。">
+  <title>朱晓雯 Xiaowen Zhu｜未来启点社区</title>
+  <style>
+    :root { --paper:#f7f7f3; --ink:#243646; --body:#47545c; --muted:#7a858b; --line:#dce1df; --accent:#577685; --tint:#edf1ef; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:24px; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    a:hover { color:var(--accent); }
+    a:focus-visible { outline:2px solid var(--accent); outline-offset:5px; }
+    h1,h2,h3,p,figure { margin:0; }
+    .wrap { width:min(1080px,calc(100% - 64px)); margin-inline:auto; }
+    .header { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid var(--line); }
+    .wordmark { font-size:14px; font-weight:600; letter-spacing:.07em; }
+    .wordmark span { font-size:12px; font-weight:400; letter-spacing:.04em; color:var(--muted); margin-left:10px; }
+    .nav { display:flex; gap:27px; font-size:13px; color:#65747b; }
+    .profile { display:grid; grid-template-columns:minmax(0,1fr) 246px; grid-template-areas:"identity portrait" "summary portrait" "links portrait"; column-gap:76px; row-gap:23px; padding:60px 0 58px; align-items:start; }
+    .identity { grid-area:identity; align-self:end; }
+    .kicker { font-size:11px; letter-spacing:.16em; color:var(--muted); font-weight:500; }
+    h1 { font-family:"Songti SC","STSong",Georgia,serif; font-size:58px; font-weight:500; line-height:1.2; letter-spacing:.01em; margin:16px 0 8px; }
+    .english-name { font-family:Georgia,serif; font-size:19px; font-weight:400; color:#859197; margin-left:17px; letter-spacing:.01em; white-space:nowrap; }
+    .position { font-size:16px; color:#4c606e; letter-spacing:.03em; }
+    .portrait { grid-area:portrait; width:100%; aspect-ratio:3/4; overflow:hidden; background:transparent; }
+    .portrait img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 31%; }
+    .summary { grid-area:summary; font-size:16px; line-height:1.95; color:var(--body); max-width:740px; }
+    .contact-links { grid-area:links; display:flex; flex-wrap:wrap; gap:13px 26px; font-size:12px; color:#6d7e87; padding-top:1px; }
+    .contact-links a { border-bottom:1px solid #bfc9cd; padding-bottom:3px; overflow-wrap:anywhere; }
+    .section { border-top:1px solid var(--line); padding:38px 0 42px; }
+    .section-title { display:flex; align-items:baseline; gap:15px; margin-bottom:27px; }
+    .section-title .index { font-family:Georgia,serif; font-size:12px; color:#9aa6ab; }
+    .section-title h2 { font-size:16px; font-weight:600; letter-spacing:.04em; }
+    .community-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:70px; }
+    .principle { font-family:"Songti SC","STSong",Georgia,serif; font-size:32px; font-weight:400; line-height:1.5; letter-spacing:-.015em; }
+    .community-copy { color:var(--body); font-size:15px; line-height:1.9; }
+    .community-copy p+p { margin-top:12px; }
+    .mechanism { display:flex; align-items:center; gap:12px; margin-top:21px; font-size:12px; color:#5c727c; }
+    .mechanism span { background:var(--tint); padding:8px 12px; }
+    .mechanism b { font-weight:400; color:#9eadaf; }
+    .timeline { list-style:none; margin:0; padding:0; }
+    .timeline li { display:grid; grid-template-columns:174px 1fr; gap:34px; position:relative; padding-bottom:29px; }
+    .timeline li:last-child { padding-bottom:0; }
+    .timeline li:before { content:""; position:absolute; left:190px; top:7px; width:5px; height:5px; border:1px solid #9aadb5; border-radius:50%; background:var(--paper); }
+    .timeline li:after { content:""; position:absolute; left:192px; top:18px; bottom:3px; width:1px; background:var(--line); }
+    .timeline li:last-child:after { display:none; }
+    .date { padding-top:2px; font-size:13px; color:#77868e; font-variant-numeric:tabular-nums; letter-spacing:.015em; }
+    .milestone { padding-left:12px; }
+    .milestone h3 { font-size:16px; line-height:1.55; font-weight:500; }
+    .role { color:#607481; font-size:13px; line-height:1.7; margin-top:5px; }
+    .milestone-note { color:var(--muted); font-size:12px; line-height:1.8; margin-top:4px; }
+    .footer { border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:baseline; gap:20px; padding:24px 0 32px; color:#8b9598; font-size:11px; }
+    .footer a { color:#71828a; }
+    .skip { position:absolute; left:-9999px; }
+    .skip:focus { left:12px; top:12px; background:white; padding:10px; z-index:3; }
+    @media(max-width:900px) {
+      .profile { column-gap:40px; grid-template-columns:minmax(0,1fr) 210px; padding-top:46px; }
+      h1 { font-size:48px; }
+      .english-name { display:block; margin:6px 0 12px; font-size:17px; }
+      .community-grid { gap:35px; grid-template-columns:1fr 1.3fr; }
+      .principle { font-size:28px; }
+    }
+    @media(max-width:620px) {
+      .wrap { width:calc(100% - 40px); }
+      .header { min-height:65px; gap:10px; }
+      .wordmark span { display:none; }
+      .nav { gap:15px; font-size:12px; }
+      .profile { grid-template-columns:minmax(0,1fr) 112px; grid-template-areas:"identity portrait" "summary summary" "links links"; gap:23px 20px; padding:32px 0 35px; }
+      .identity { align-self:center; }
+      .kicker { font-size:9px; letter-spacing:.1em; }
+      h1 { font-size:39px; margin:10px 0 6px; }
+      .english-name { font-size:15px; margin:5px 0 11px; }
+      .position { font-size:13px; line-height:1.6; }
+      .portrait { align-self:center; aspect-ratio:3/4; }
+      .summary { font-size:14px; line-height:1.95; }
+      .contact-links { font-size:11px; gap:10px 18px; }
+      .section { padding:29px 0 32px; }
+      .section-title { margin-bottom:22px; gap:12px; }
+      .section-title h2 { font-size:15px; }
+      .community-grid { display:block; }
+      .principle { font-size:28px; margin-bottom:15px; }
+      .community-copy { font-size:14px; }
+      .timeline li { grid-template-columns:1fr; gap:7px; padding:0 0 27px 22px; }
+      .timeline li:before { left:1px; top:7px; }
+      .timeline li:after { left:3px; }
+      .date { font-size:12px; }
+      .milestone { padding-left:0; }
+      .milestone h3 { font-size:15px; }
+      .role { font-size:12px; }
+      .footer { flex-wrap:wrap; gap:9px; line-height:1.7; }
+    }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+    /* Profile and portfolio refinements */
+    .header { min-height:86px; }
+    .community-brand { display:block; padding:10px 0; flex:none; }
+    .community-brand img { display:block; width:127px; height:auto; }
+    .header-motto { font-size:15px; letter-spacing:.1em; color:#566c77; text-align:right; }
+    .profile { grid-template-areas:"identity portrait" "summary portrait" "affiliations affiliations" "links links"; row-gap:22px; padding-top:38px; padding-bottom:36px; }
+    h1 { margin-top:0; }
+    .summary { font-size:15px; line-height:1.85; }
+    .summary p+p { margin-top:13px; }
+    .affiliations { grid-area:affiliations; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:29px; align-items:center; max-width:790px; margin-top:3px; }
+    .affiliations a { display:flex; align-items:center; justify-content:flex-start; height:53px; }
+    .affiliations img { display:block; width:100%; max-width:135px; max-height:45px; object-fit:contain; object-position:left center; }
+    .affiliations img.engine-mark { max-width:118px; max-height:55px; }
+    .affiliations img.forvia-mark { width:80%; max-width:108px; margin-inline:auto; }
+    .principle { font-size:29px; }
+    @media(max-width:900px) {
+      .profile { column-gap:35px; grid-template-columns:minmax(0,1fr) 190px; }
+      .affiliations { gap:24px; max-width:none; }
+      .affiliations img { max-height:39px; }
+      .affiliations img.engine-mark { max-height:49px; }
+    }
+    @media(max-width:620px) {
+      .header { min-height:73px; }
+      .community-brand img { width:101px; }
+      .header-motto { font-size:12px; letter-spacing:.06em; }
+      .profile { grid-template-columns:minmax(0,1fr) 112px; grid-template-areas:"identity portrait" "summary summary" "affiliations affiliations" "links links"; gap:20px 20px; padding:27px 0 30px; }
+      h1 { margin-top:0; }
+      .summary { font-size:14px; line-height:1.85; }
+      .summary p+p { margin-top:11px; }
+      .affiliations { gap:15px; margin:0; }
+      .affiliations a { height:39px; }
+      .affiliations img { max-height:34px; }
+      .affiliations img.engine-mark { max-height:40px; }
+      .principle { font-size:27px; }
+    }
+
+    .community-vision { min-width:0; }
+    .frontier-tags { display:flex; flex-wrap:nowrap; align-items:center; gap:11px; overflow-x:auto; margin-top:18px; padding-bottom:5px; color:#788d96; font-size:10px; line-height:1.7; scrollbar-width:thin; scrollbar-color:#cdd6d9 transparent; }
+    .frontier-tags span { flex:none; white-space:nowrap; }
+    .investment-list { list-style:none; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:0; margin:0; padding:0; }
+    .investment { min-width:0; padding:3px 22px 0; }
+    .investment:first-child { padding-left:0; }
+    .investment:last-child { padding-right:0; }
+    .investment+.investment { border-left:1px solid var(--line); }
+    .investment h3 { margin:0 0 13px; font-size:18px; font-weight:500; white-space:nowrap; }
+    .entry-stage { font-size:12px; color:#738995; line-height:1.6; white-space:nowrap; }
+    .current-stage { font-size:12px; color:#385666; line-height:1.6; margin-top:6px; white-space:nowrap; }
+    .current-stage span { font-size:10px; color:#94a0a5; margin-right:4px; }
+    .investment-focus { font-size:12px; color:#617781; line-height:1.8; margin-top:12px; }
+    @media(max-width:900px) {
+      .investment { padding-inline:14px; }
+      .investment h3 { font-size:16px; }
+      .entry-stage,.current-stage { font-size:11px; }
+      .investment-focus { font-size:11px; }
+    }
+    @media(max-width:620px) {
+      .frontier-tags { margin:0 0 20px; gap:12px; }
+      .investment { padding-inline:10px; }
+      .investment h3 { font-size:14px; margin-bottom:11px; }
+      .entry-stage,.current-stage { font-size:10px; }
+      .current-stage span { font-size:9px; margin-right:2px; }
+      .investment-focus { font-size:11px; margin-top:9px; }
+    }
+    @media(max-width:480px) {
+      .investment-list { grid-template-columns:repeat(5,110px); overflow-x:auto; padding-bottom:13px; scrollbar-width:thin; scrollbar-color:#cdd6d9 transparent; }
+      .investment:last-child { padding-right:10px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="header wrap">
+    <a class="community-brand" href="https://enginecomm.com/en/" target="_blank" rel="noopener noreferrer" aria-label="未来启点社区官网"><img src="assets/engine-community.png" alt="Shanghai Engine Community" width="1148" height="500"></a>
+    <p class="header-motto">0–1 前沿科技孵化</p>
+  </header>
+  <main id="main" class="wrap">
+    <section class="profile" id="about" aria-labelledby="name">
+      <div class="identity"><h1 id="name">朱晓雯 <span class="english-name" lang="en">Xiaowen Zhu</span></h1><p class="position">未来启点社区负责人</p></div>
+      <figure class="portrait"><img src="assets/portrait-halftone-ink.png" alt="朱晓雯版画风格肖像" width="1024" height="1448" fetchpriority="high"></figure>
+      <div class="summary"><p>未来启点社区负责人，专注前沿科技项目孵化；10年早期投资经验。上海交通大学材料学院本硕、法国国立高等工程技术学院硕士；曾任全球顶尖加速器 Plug and Play China 基金合伙人、500强企业 Saint-Gobain 集团及 FORVIA 集团 CVC 及开放式创新主管。</p><p>曾主导非夕科技、穹彻智能、欧卡智舶、千觉机器人、CODE27等项目的天使及天使+轮投资。</p></div>
+      <div class="affiliations" aria-label="任职与教育经历相关机构">
+        <a href="https://enginecomm.com/en/" target="_blank" rel="noopener noreferrer" title="未来启点社区"><img class="engine-mark" src="assets/engine-community.png" alt="未来启点社区"></a>
+        <a href="https://www.saint-gobain.com/en" target="_blank" rel="noopener noreferrer" title="Saint-Gobain 圣戈班"><img src="assets/saint-gobain.png" alt="Saint-Gobain"></a>
+        <a href="https://www.forvia.com/" target="_blank" rel="noopener noreferrer" title="FORVIA"><img class="forvia-mark" src="assets/forvia.svg" alt="FORVIA"></a>
+        <a href="https://www.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer" title="上海交通大学"><img src="assets/sjtu.png" alt="上海交通大学"></a>
+        <a href="https://artsetmetiers.fr/" target="_blank" rel="noopener noreferrer" title="Arts et Métiers"><img src="assets/arts-et-metiers.png" alt="Arts et Métiers"></a>
+      </div>
+      <div class="contact-links" id="contact"><a href="mailto:xiaowen.zhu@enginecommnity.cn">xiaowen.zhu@enginecommnity.cn</a><a href="https://enginecomm.com/en/" target="_blank" rel="noopener noreferrer">未来启点社区官网 ↗</a></div>
+    </section>
+    <section class="section" id="community" aria-labelledby="community-title">
+      <div class="section-title"><span class="index" aria-hidden="true">02</span><h2 id="community-title">我想做的</h2></div>
+      <div class="community-grid"><div class="community-vision"><p class="principle">看见人才，连接创新。</p><div class="frontier-tags" aria-label="关注的前沿科技方向"><span>人工智能</span><span>AI for Science</span><span>脑机接口</span><span>量子计算</span><span>生物医药</span><span>芯片半导体</span><span>天基计算</span></div></div><div class="community-copy"><p>社区将人才发现作为前沿科技转化的起点，关注具备技术积累与创业意愿、尚未被市场充分认识的科研人才。打造高密度人才社区，促进链接，创新涌现。</p><p>依托上海未来产业基金（150亿元规模），以基金 × 社区双轮驱动，形成“发现—赋能—投资—连接”闭环。</p><div class="mechanism" aria-label="社区孵化与基金投资双轮驱动"><span>社区孵化</span><b aria-hidden="true">×</b><span>基金投资</span></div></div></div>
+    </section>
+    <section class="section" id="investments" aria-labelledby="investments-title">
+      <div class="section-title"><span class="index" aria-hidden="true">03</span><h2 id="investments-title">代表投资案例</h2></div>
+      <ul class="investment-list" aria-label="代表投资企业及发展阶段"><li class="investment"><h3>非夕科技</h3><p class="entry-stage">天使+轮投资</p><p class="current-stage"><span>现阶段</span> Pre-IPO</p><p class="investment-focus">自适应机器人独角兽企业</p></li><li class="investment"><h3>穹彻智能</h3><p class="entry-stage">天使轮投资</p><p class="current-stage"><span>现阶段</span> A轮</p><p class="investment-focus">具身大脑领军企业</p></li><li class="investment"><h3>欧卡智舶</h3><p class="entry-stage">天使轮投资</p><p class="current-stage"><span>现阶段</span> C轮</p><p class="investment-focus">水面自动驾驶技术行业冠军</p></li><li class="investment"><h3>千觉机器人</h3><p class="entry-stage">天使轮投资</p><p class="current-stage"><span>现阶段</span> A轮</p><p class="investment-focus">高精度触觉传感及模型</p></li><li class="investment"><h3>CODE27</h3><p class="entry-stage">天使轮投资</p><p class="current-stage"><span>现阶段</span> A轮</p><p class="investment-focus">AI交互陪伴行业领先</p></li></ul>
+    </section>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-title"><span class="index" aria-hidden="true">04</span><h2 id="experience-title">Experience 经历</h2></div>
+      <ol class="timeline">
+        <li><p class="date">2026 — 至今</p><div class="milestone"><h3>未来启点社区</h3><p class="role">社区负责人</p><p class="milestone-note">聚焦前沿科技转化，打造创新范式人才社区。</p></div></li>
+        <li><p class="date">2017 — 2026</p><div class="milestone"><h3>Plug and Play 璞跃中国</h3><p class="role">基金合伙人</p><p class="milestone-note">主导设立人民币基金，开展硬科技早期投资、创业加速及产业合作。</p></div></li>
+        <li><p class="date">2016 — 2017</p><div class="milestone"><h3>Saint-Gobain 圣戈班</h3><p class="role">对外风险投资部 · 亚太区投资经理</p><p class="milestone-note">产业视角，围绕材料与先进技术进行投资布局、开放式创新实践。</p></div></li>
+        <li><p class="date">2013 — 2016</p><div class="milestone"><h3>佛吉亚（现 FORVIA 集团）</h3><p class="role">内饰创新团队 · 产品创新工程师</p><p class="milestone-note">智能座舱产品创新与联合研发，参与技术概念到产品样机的转化。</p></div></li>
+      </ol>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>© 2026 朱晓雯 Xiaowen Zhu</span><a href="https://enginecomm.com/en/" target="_blank" rel="noopener noreferrer">未来启点社区 ↗</a></footer>
+</body>
+</html>
